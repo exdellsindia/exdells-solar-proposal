@@ -1,0 +1,14 @@
+{
+  "name": "exdells-solar-proposal",
+  "version": "1.0.0",
+  "description": "Production-ready solar proposal PDF generator for EXDELLS.",
+  "main": "render.js",
+  "scripts": {
+    "render": "node render.js",
+    "serve": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "puppeteer": "^23.6.1"
+  }
+}
