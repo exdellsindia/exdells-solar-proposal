@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXDELLS Solar Proposal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="proposal">
+    <section class="page cover">
+      <div class="cover-hero">
+        <div class="cover-overlay">
+          <div class="logo">
+            <svg width="140" height="36" viewBox="0 0 140 36" xmlns="http://www.w3.org/2000/svg">
+              <rect width="140" height="36" rx="6" fill="#0B3B8F" />
+              <text x="18" y="24" font-family="Manrope, sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">EXDELLS</text>
+            </svg>
+            <span class="logo-tag">Solar Energy Solutions</span>
+          </div>
+          <div class="cover-title">
+            <h1>Premium Solar Proposal</h1>
+            <p>Designed for <strong id="client-name">Ananya Rao</strong> · Proposal ID <span id="proposal-id">EXD-2024-014</span></p>
+          </div>
+          <div class="cover-meta">
+            <div>
+              <span class="label">Location</span>
+              <span class="value" id="client-location">Hyderabad, Telangana</span>
+            </div>
+            <div>
+              <span class="label">System Size</span>
+              <span class="value" id="system-size">8.5 kW</span>
+            </div>
+            <div>
+              <span class="label">Prepared On</span>
+              <span class="value" id="prepared-date">22 Aug 2024</span>
+            </div>
+          </div>
+        </div>
+        <img class="hero-image" src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=1600&q=80" alt="Rooftop solar panels" />
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-header">
+        <h2>About EXDELLS</h2>
+        <p>Engineering reliable, premium solar experiences with measurable savings.</p>
+      </div>
+      <div class="grid two-column">
+        <div class="card">
+          <h3>Who We Are</h3>
+          <p>
+            EXDELLS is a vertically integrated solar provider delivering end-to-end design, procurement,
+            and installation for residential and commercial rooftops. Our in-house team ensures strict
+            quality control and on-time delivery.
+          </p>
+          <div class="badge-row">
+            <span class="badge">ISO 9001</span>
+            <span class="badge">MNRE Approved</span>
+            <span class="badge">5-Year Service</span>
+          </div>
+        </div>
+        <div class="card highlight">
+          <h3>Achievements</h3>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-value">1,200+</span>
+              <span class="stat-label">Installations</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">24 MW+</span>
+              <span class="stat-label">Capacity Delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">98%</span>
+              <span class="stat-label">Client Satisfaction</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">15+</span>
+              <span class="stat-label">Industry Awards</span>
+            </div>
+          </div>
+          <img class="card-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Solar installation team" />
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-header">
+        <h2>System Overview</h2>
+        <p>Tailored configuration to maximize output and long-term ROI.</p>
+      </div>
+      <div class="grid two-column">
+        <div class="card">
+          <h3>Recommended Configuration</h3>
+          <table class="info-table">
+            <tbody>
+              <tr><td>System Capacity</td><td id="overview-capacity">8.5 kW</td></tr>
+              <tr><td>Panel Type</td><td>Mono PERC 550W</td></tr>
+              <tr><td>Inverter</td><td>Hybrid 10 kW (Wi-Fi Enabled)</td></tr>
+              <tr><td>Mounting</td><td>Aluminium Structure (15° tilt)</td></tr>
+              <tr><td>Performance Ratio</td><td id="performance-ratio">79%</td></tr>
+              <tr><td>Expected Life</td><td>25+ Years</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Design Highlights</h3>
+          <ul class="list">
+            <li>Optimized string sizing for peak efficiency.</li>
+            <li>Real-time monitoring via mobile dashboard.</li>
+            <li>Surge protection and lightning arrestors included.</li>
+            <li>Net-metering ready documentation support.</li>
+          </ul>
+          <div class="image-stack">
+            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=80" alt="Solar panel close-up" />
+            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=900&q=80" alt="Rooftop array" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-header">
+        <h2>Energy Generation Forecast</h2>
+        <p>Estimated production based on site irradiation and system capacity.</p>
+      </div>
+      <div class="card chart-card">
+        <div class="chart-header">
+          <div>
+            <h3>Monthly Generation (kWh)</h3>
+            <p>Annual generation: <span id="annual-generation">12,750</span> kWh</p>
+          </div>
+          <div class="chart-summary">
+            <div>
+              <span class="label">Monthly Avg</span>
+              <span class="value" id="monthly-generation">1,062</span>
+            </div>
+            <div>
+              <span class="label">CO₂ Offset</span>
+              <span class="value" id="annual-co2">9.8 Tons</span>
+            </div>
+          </div>
+        </div>
+        <canvas id="generationChart" height="240"></canvas>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-header">
+        <h2>ROI & Savings Projection</h2>
+        <p>Financial performance over 25 years with tariff escalation.</p>
+      </div>
+      <div class="grid two-column">
+        <div class="card">
+          <h3>Key Financial Indicators</h3>
+          <div class="kpi-grid">
+            <div>
+              <span class="label">Total System Cost</span>
+              <span class="value" id="total-cost">₹0</span>
+            </div>
+            <div>
+              <span class="label">Net Payable</span>
+              <span class="value" id="net-payable">₹0</span>
+            </div>
+            <div>
+              <span class="label">Payback Period</span>
+              <span class="value" id="payback-period">0 yrs</span>
+            </div>
+            <div>
+              <span class="label">25-Year Savings</span>
+              <span class="value" id="lifetime-savings">₹0</span>
+            </div>
+          </div>
+          <p class="note">*Values include GST, subsidy impact, and 5% annual tariff escalation.</p>
+        </div>
+        <div class="card chart-card">
+          <h3>ROI Growth (Year 1–25)</h3>
+          <canvas id="roiChart" height="220"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-header">
+        <h2>Timeline & Milestones</h2>
+        <p>End-to-end execution plan for a seamless installation.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-date">Week 1</div>
+          <div class="timeline-content">
+            <h4>Site Survey & Engineering</h4>
+            <p>Roof inspection, shading analysis, and final design freeze.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Week 2</div>
+          <div class="timeline-content">
+            <h4>Material Procurement</h4>
+            <p>Panels, inverter, mounting structure, and electrical BOS.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Week 3</div>
+          <div class="timeline-content">
+            <h4>Installation & Commissioning</h4>
+            <p>Mounting, wiring, testing, and performance validation.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Week 4</div>
+          <div class="timeline-content">
+            <h4>Net Metering & Handover</h4>
+            <p>Utility approvals, documentation, and client training.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card timeline-image">
+        <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80" alt="Solar installation process" />
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-header">
+        <h2>Components & Warranties</h2>
+        <p>Premium-grade components backed by industry-leading warranties.</p>
+      </div>
+      <div class="grid two-column">
+        <div class="card">
+          <h3>Bill of Materials</h3>
+          <table class="info-table">
+            <tbody>
+              <tr><td>Solar Panels</td><td>16 × 550W Mono PERC</td></tr>
+              <tr><td>Inverter</td><td>1 × 10 kW Hybrid</td></tr>
+              <tr><td>Mounting Structure</td><td>Aluminium Anodized</td></tr>
+              <tr><td>Monitoring</td><td>Wi-Fi Smart Logger</td></tr>
+              <tr><td>Safety</td><td>DC/AC SPD + Earthing</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Warranty Coverage</h3>
+          <div class="warranty-grid">
+            <div>
+              <span class="warranty-value">25 Years</span>
+              <span class="warranty-label">Panel Performance</span>
+            </div>
+            <div>
+              <span class="warranty-value">12 Years</span>
+              <span class="warranty-label">Panel Product</span>
+            </div>
+            <div>
+              <span class="warranty-value">10 Years</span>
+              <span class="warranty-label">Inverter</span>
+            </div>
+            <div>
+              <span class="warranty-value">5 Years</span>
+              <span class="warranty-label">Workmanship</span>
+            </div>
+          </div>
+          <img class="card-image" src="https://images.unsplash.com/photo-1509395284016-8b7b1e2fd93b?auto=format&fit=crop&w=1200&q=80" alt="Solar components" />
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-header">
+        <h2>Cost Breakdown</h2>
+        <p>Transparent pricing with GST and subsidy impact.</p>
+      </div>
+      <div class="grid two-column">
+        <div class="card">
+          <h3>Financial Summary</h3>
+          <table class="info-table">
+            <tbody>
+              <tr><td>Base System Cost</td><td id="base-cost">₹0</td></tr>
+              <tr><td>GST (18%)</td><td id="gst-amount">₹0</td></tr>
+              <tr><td>Total Cost (Incl. GST)</td><td id="total-cost-table">₹0</td></tr>
+              <tr><td>Government Subsidy</td><td id="subsidy">₹0</td></tr>
+              <tr><td><strong>Net Payable</strong></td><td id="net-payable-table"><strong>₹0</strong></td></tr>
+            </tbody>
+          </table>
+          <p class="note">Prices are indicative and valid for 15 days.</p>
+        </div>
+        <div class="card">
+          <h3>Payment Milestones</h3>
+          <div class="milestone">
+            <span>Booking Advance</span>
+            <span>30%</span>
+          </div>
+          <div class="milestone">
+            <span>Material Delivery</span>
+            <span>40%</span>
+          </div>
+          <div class="milestone">
+            <span>Commissioning</span>
+            <span>30%</span>
+          </div>
+          <img class="card-image" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80" alt="Financial planning" />
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-header">
+        <h2>Environmental Impact</h2>
+        <p>Positive footprint with every kilowatt generated.</p>
+      </div>
+      <div class="grid three-column">
+        <div class="impact-card">
+          <h3 id="co2-offset">0 Tons</h3>
+          <p>Annual CO₂ avoided</p>
+        </div>
+        <div class="impact-card">
+          <h3 id="trees-equivalent">0 Trees</h3>
+          <p>Equivalent trees planted</p>
+        </div>
+        <div class="impact-card">
+          <h3 id="coal-saved">0 Tons</h3>
+          <p>Coal saved annually</p>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Why It Matters</h3>
+        <p>
+          Over 25 years, your solar plant avoids thousands of kilograms of carbon emissions, supporting a
+          cleaner grid and healthier communities.
+        </p>
+        <div class="impact-image">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80" alt="Green landscape" />
+        </div>
+      </div>
+    </section>
+
+    <section class="page thank-you">
+      <div class="thank-you-content">
+        <h2>Thank You</h2>
+        <p>We are excited to power your future with clean energy.</p>
+        <div class="contact-card">
+          <div>
+            <h3>Get in touch</h3>
+            <p>+91 98765 43210</p>
+            <p>hello@exdells.com</p>
+            <p>www.exdells.com</p>
+          </div>
+          <div>
+            <h3>Project Consultant</h3>
+            <p id="consultant-name">Riya Mehta</p>
+            <p id="consultant-email">riya@exdells.com</p>
+          </div>
+        </div>
+      </div>
+      <img class="thank-you-image" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80" alt="Solar skyline" />
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
